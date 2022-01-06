@@ -3,7 +3,7 @@
 ## build
 ```
 npm install
-npm run build
+npm run build-dev
 ```
 
 ## 參考資料

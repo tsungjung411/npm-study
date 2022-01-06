@@ -1,5 +1,9 @@
 const path = require('path');
 
+console.log('path:', path);
+console.log('workspace:', __dirname);
+console.log('workspace/dist:', path.resolve(__dirname, 'dist'));
+
 module.exports = {
   entry: './src/main.js',
   output: {
@@ -11,7 +15,6 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
-          // 配置 loader (第一步)
           {
             loader: 'file-loader',
           },
